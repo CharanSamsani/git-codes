@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Define colors
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
 # Show git status
 git status
 
@@ -42,5 +46,5 @@ else
     echo "Changes have been pushed."
 fi
 
-# Success message
-echo "Script executed successfully! All changes have been committed and pushed."
+# Success message in green
+echo -e "${GREEN}Script executed successfully! All changes have been committed and pushed.${NC}"
